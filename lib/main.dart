@@ -4,19 +4,25 @@ import 'package:english_words/english_words.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Startup Name Generator',
+      title: 'Global Hack Week December',
       theme: ThemeData(
-        primaryColor: Colors.white,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.lightGreen,
+          foregroundColor: Colors.black,
+        )
       ),
-      home: RandomWords(),
+      home: const RandomWords(),
     );
   }
 }
 
 class RandomWords extends StatefulWidget {
+  const RandomWords({super.key});
   @override
   RandomWordsState createState() => RandomWordsState();
 }

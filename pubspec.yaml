@@ -16,6 +16,7 @@ dev_dependencies:
 dependencies:
   material: ^1.0.0+2
   english_words: ^4.0.0
+  device_info_plus: ^8.0.0
 
 flutter:
   # material: ^1.0.0+2
